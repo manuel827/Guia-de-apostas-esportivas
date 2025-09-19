@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Promoção</title>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --card-bg: #0b1220;
+        --accent: #10b981;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        font-family: Inter, system-ui, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--bg);
+        color: #0f172a;
+        padding: 20px;
+      }
+      .card {
+        width: 100%;
+        max-width: 680px;
+        padding: 36px 24px;
+        border-radius: 16px;
+        background: var(--card-bg); /* fundo escuro sólido */
+        box-shadow: 0 8px 30px rgba(2,6,23,0.2);
+        text-align: center;
+        color: #e6eef8; /* texto claro dentro do card */
+      }
+      h1 {
+        font-size: clamp(1.5rem, 4vw, 2.2rem);
+        margin: 0 0 14px;
+      }
+      p {
+        margin: 0 0 22px;
+        font-size: clamp(1rem, 3vw, 1.2rem);
+        line-height: 1.4;
+      }
+      .whatsapp-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 14px 24px;
+        border-radius: 10px;
+        background: var(--accent);
+        color: #04201b;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: clamp(1rem, 3vw, 1.1rem);
+        box-shadow: 0 6px 18px rgba(16,185,129,0.18);
+        transition: transform 0.2s ease, background 0.2s ease;
+      }
+      .whatsapp-btn:active {
+        transform: translateY(1px);
+      }
+      .whatsapp-btn:hover {
+        background: #34d399;
+      }
+      .small {
+        font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+        opacity: 0.8;
+        margin-top: 12px;
+        word-break: break-word;
+        color: #e6eef8; /* texto claro no rodapé do card */
+      }
+      @media (max-width: 480px) {
+        .card {
+          padding: 24px 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <main class="card">
+    <p class="h1">REI DOS PALPITES</p>
+      
+      <h1>Palpites fortes todos os dias.</h1>
+      <p>Aproveite a promoção</p>
+      <a class="whatsapp-btn" href="https://wa.me/+244945285082?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20promo%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" aria-label="Abrir conversa no WhatsApp com +244945285082">
+        <span>Grupo VIP WhatsApp</span>
+      </a>
+      <div class="small">está quase cheio, aproveite esta oportunidade!</div>
+    </main>
+  </body>
+</html>
